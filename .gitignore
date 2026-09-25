@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ===== ML artifacts =====
+# Datasets, checkpoints, plots — reproduced by running train.py,
+# and are too large for version control.
+data/
+__pycache__/
+pytorch/
