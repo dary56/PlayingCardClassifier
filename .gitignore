@@ -220,6 +220,8 @@ __marimo__/
 # ===== ML artifacts =====
 # Datasets, checkpoints, plots — reproduced by running train.py,
 # and are too large for version control.
-data/
+data/*
+!data/best_model.pth
+!data/classes.json
 __pycache__/
 pytorch/
