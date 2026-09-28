@@ -121,8 +121,8 @@ learning rate 0.0062, batch size 16, оптимизатор SGD, weight decay 0.
 
 ## API
 
-Эндпоинта `POST /predict` принимает изображение карты через `multipart/form-data` 
-и возвращает JSON с полем `class` (имя класса) и `probability` (вероятность).
+Эндпоинт `POST /predict` принимает изображение карты  и возвращает JSON с полем 
+`class` (имя класса) и `probability` (вероятность).
 Когда модель обучена, можно запускать API:
 
     uvicorn api:app --reload
@@ -133,4 +133,4 @@ learning rate 0.0062, batch size 16, оптимизатор SGD, weight decay 0.
 
 Нужно открыть ссылку в браузере, в конце добавив `/docs`. Разворачиваем `POST /predict`,
 нажимаем «Try it out», загружаем картинку карты (не обязательно из датасета, любую) 
-и жмём «Execute». Получаем в ответ JSON с классом и вероятностью.
+и жмём «Execute».
